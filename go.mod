@@ -1,4 +1,4 @@
-module github.com/brettcodling/schedule-dashboard
+module github.com/brettcodling/scheduledashboard
 
 go 1.18
 

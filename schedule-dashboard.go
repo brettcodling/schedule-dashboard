@@ -1,4 +1,4 @@
-package main
+package scheduledashboard
 
 import (
 	"errors"
@@ -7,7 +7,7 @@ import (
 	"os"
 
 	"github.com/brettcodling/jsonlogger"
-	"github.com/brettcodling/schedule-dashboard/pkg/utils"
+	"github.com/brettcodling/scheduledashboard/pkg/utils"
 	"github.com/go-co-op/gocron"
 )
 
