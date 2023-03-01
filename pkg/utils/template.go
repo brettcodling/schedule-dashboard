@@ -26,8 +26,6 @@ const BodyStart = `
 const BodyEnd = "</div></body>"
 const Footer = "</html>"
 
-var Count = 0
-
 // BuildJobOutput will build the html required to display the job data
 func BuildJobOutput(job *gocron.Job) string {
 	running := "No"
@@ -47,7 +45,6 @@ func BuildJobOutput(job *gocron.Job) string {
 			<div>Next Run: ` + job.NextRun().String() + `</div>
 			<div>Times Run: ` + strconv.Itoa(job.RunCount()) + `</div>
 			<div>Last Error: ` + err + `</div>
-			<div>Count: ` + strconv.Itoa(Count) + `</div>
 		</div>
 	</div>
 	`
