@@ -18,7 +18,7 @@ const Header = `
 const BodyStart = `
 <body class="bg-slate-200">
 	<div class="flex items-center border-b border-slate-300">
-		<img class="h-8 w-8 mx-4 my-6" src="data:image/png;base64,` + Favicon + `" />
+		<img class="h-8 w-8 mx-4 my-6" src="data:image/png;base64,` + favicon + `" />
 		<span class="text-xl">Go Scheduler - Dashboard</span>
 	</div>
 	<div class="px-8 py-4" hx-get="/jobs" hx-trigger="load" hx-swap="outerHTML">
