@@ -25,9 +25,6 @@ func Start(port string) {
 		mux.HandleFunc("/favicon.ico", iconHandler)
 		mux.HandleFunc("/dashboard", dashboardHandler)
 		mux.HandleFunc("/jobs", jobHandler)
-		mux.HandleFunc("/inc", func(w http.ResponseWriter, r *http.Request) {
-			utils.Count++
-		})
 		jsonlogger.Info("listening")
 		log.Fatal(http.ListenAndServe(":"+port, mux))
 	}()
